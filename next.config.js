@@ -2,10 +2,8 @@
 const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
-    assetPrefix: isProd ? '/ui/' : '',
-  images: {
-    unoptimized: true,
-  },
+  output: "export",
+  assetPrefix: isProd ? '/ui/' : '',
 }
 
 module.exports = nextConfig
